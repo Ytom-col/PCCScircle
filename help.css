@@ -37,6 +37,19 @@ a[target="_blank"]:hover {
   cursor: pointer;
   color: red;
 }
+.anno {
+  width: 900px;
+  position: relative;
+  padding-left: 1em;
+  text-indent: 0em;
+}
+.anno::before {
+  content: "*";
+  font-size: 12px;
+  position: absolute;
+  left: 0.2em;
+  top: 0;
+}
 
 @media (max-width: 3000px) {
   .container {
