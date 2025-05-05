@@ -24,6 +24,19 @@ body {
   color: rgb(65, 65, 65);
   transform: translate(-3px,-2px);
 }
+a[target="_blank"]::after{
+  content:'';
+  display:inline-block;
+  background-image:url(/link.svg);
+  width:1em;
+  height:1em;
+  background-size: contain;
+  vertical-align: middle;
+}
+a[target="_blank"]:hover {
+  cursor: pointer;
+  color: red;
+}
 
 @media (max-width: 3000px) {
   .container {
