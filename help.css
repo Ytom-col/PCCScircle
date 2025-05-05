@@ -57,7 +57,7 @@ body {
   height: 1px;
   background-color: black;
 }
-.container > p:nth-child(n+7):nth-child(-n+8) > span {
+.container > p:nth-child(n+1):nth-child(-n+90) > span {
   color: rgb(214, 132, 132);
   font-weight: bold;
 }
