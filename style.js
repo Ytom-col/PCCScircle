@@ -925,10 +925,15 @@ function setupclickEffect(buttonList, prefix) {
       switch (cc) {
         case 0:
           dp1.style.display = "flex";
-          dp1t.innerHTML = color + `<br>` + prefix + text;
+          if (prefix === 'p' || prefix === 'lt') {
+            dp1t.innerHTML = color + `<br>` + prefix + text + "+";
+            sessionStorage.setItem('dp1t', color + `<br>` + prefix + text + "+");
+          } else {
+            dp1t.innerHTML = color + `<br>` + prefix + text;
+            sessionStorage.setItem('dp1t', color + `<br>` + prefix + text);
+          } 
           dp1.style.backgroundColor = color;
           sessionStorage.setItem('dp1c', color);
-          sessionStorage.setItem('dp1t', color + `<br>` + prefix + text);
           dp1.style.borderRadius = "10px 10px 10px 10px";
           if (windowWidth <= 1024) {
             dp1.style.borderRadius = "0px 0px 0px 0px";
@@ -938,10 +943,15 @@ function setupclickEffect(buttonList, prefix) {
           break;
         case 1:
           dp2.style.display = "flex";
-          dp2t.innerHTML = color + `<br>` + prefix + text;
+          if (prefix === 'p' || prefix === 'lt') {
+            dp2t.innerHTML = color + `<br>` + prefix + text + "+";
+            sessionStorage.setItem('dp2t', color + `<br>` + prefix + text + "+");
+          } else {
+            dp2t.innerHTML = color + `<br>` + prefix + text;
+            sessionStorage.setItem('dp2t', color + `<br>` + prefix + text);
+          } 
           dp2.style.backgroundColor = color;
           sessionStorage.setItem('dp2c', color);
-          sessionStorage.setItem('dp2t', color + `<br>` + prefix + text);
           dp1.style.borderRadius = "10px 10px 0px 0px";
           dp2.style.borderRadius = "0px 0px 10px 10px";
           if (windowWidth <= 1024) {
@@ -956,10 +966,15 @@ function setupclickEffect(buttonList, prefix) {
           break;
         case 2:
           dp3.style.display = "flex";
-          dp3t.innerHTML = color + `<br>` + prefix + text;
+          if (prefix === 'p' || prefix === 'lt') {
+            dp3t.innerHTML = color + `<br>` + prefix + text + "+";
+            sessionStorage.setItem('dp3t', color + `<br>` + prefix + text + "+");
+          } else {
+            dp3t.innerHTML = color + `<br>` + prefix + text;
+            sessionStorage.setItem('dp3t', color + `<br>` + prefix + text);
+          } 
           dp3.style.backgroundColor = color;
           sessionStorage.setItem('dp3c', color);
-          sessionStorage.setItem('dp3t', color + `<br>` + prefix + text);
           dp2.style.borderRadius = "0px 0px 0px 0px";
           dp3.style.borderRadius = "0px 0px 10px 10px";
           if (windowWidth <= 1024) {
@@ -975,10 +990,15 @@ function setupclickEffect(buttonList, prefix) {
           break;
         case 3:
           dp4.style.display = "flex";
-          dp4t.innerHTML = color + `<br>` + prefix + text;
+          if (prefix === 'p' || prefix === 'lt') {
+            dp4t.innerHTML = color + `<br>` + prefix + text + "+";
+            sessionStorage.setItem('dp4t', color + `<br>` + prefix + text + "+");
+          } else {
+            dp4t.innerHTML = color + `<br>` + prefix + text;
+            sessionStorage.setItem('dp4t', color + `<br>` + prefix + text);
+          } 
           dp4.style.backgroundColor = color;
           sessionStorage.setItem('dp4c', color);
-          sessionStorage.setItem('dp4t', color + `<br>` + prefix + text);
           dp3.style.borderRadius = "0px 0px 0px 0px";
           dp4.style.borderRadius = "0px 0px 10px 10px";
           if (windowWidth <= 1024) {
