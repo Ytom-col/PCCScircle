@@ -207,7 +207,11 @@ function setupHoverEffect(buttonList, targetLine, targetText, prefix) {
       targetLine.style.backgroundColor = gray;
       targetText.style.display = 'flex';
       let text = button.textContent;
-      targetText.textContent = prefix + text;
+      if (prefix === 'p' || prefix === 'lt') {
+        targetText.textContent = prefix + text + "+";
+      } else {
+        targetText.textContent = prefix + text;
+      }
     });
 
     button.addEventListener("mouseout", function() {
