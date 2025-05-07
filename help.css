@@ -83,6 +83,13 @@ a[target="_blank"]:hover {
   height: 1px;
   background-color: black;
 }
+.revLine {
+  align-items: center;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  border-bottom: dashed 1.3px #333;
+}
 .container > p:nth-child(n+1):nth-child(-n+90) > span {
   color: rgb(214, 132, 132);
   font-weight: bold;
