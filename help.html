@@ -16,47 +16,221 @@
   </button>
 
   <div class="container">
-    <p style="position: absolute; left: 50%; transform: translate(-50%); font-size: 12px; line-height: 0px;">最終更新日：2025-5-8</p>
-    <p style="font-size: 25px; font-weight: bold;">ヘルプセンター</p>
-    <div class="line"></div>
-    <p style="font-size: 20px; text-align: center;">PCCSとは？</p>
-    <p style="font-size: 13px; text-align: justify;">
-      <span>一般財団法人日本色彩研究所</span>が開発した表色系。
-      <br>「彩度」「明度」を「トーン」という概念で表したもの。
-      <br><a href="https://ja.wikipedia.org/wiki/PCCS" target="_blank">参考</a>
-      <br><span class="anno" style="font-size: 10px; font-weight: normal;">本サイトのPCCSは、「色彩検定３級」のテキストと「新配色カード199a」を参考に制作されたため、「sトーン(strong)」はありません。また、「ltトーン(light)」「pトーン(pale)」は、代表色よりも彩度が高い色であることを示す「＋」の記号が付いています。</span>
-    </p>
-    <div class="line"></div>
 
-    <p style="font-size: 20px; text-align: center;">使い方</p>
-    <p style="font-size: 13px; text-align: justify;">
-      ・中心にある<span>PCCS</span>をクリックし、配色の確認ができます。</p>
-    <p style="font-size: 13px; text-align: justify;">
-      ・配色の順番を変更・削除することも可能です。</p>
-    <p style="font-size: 13px; text-align: justify;">
-      ・色は最大4つまで追加可能です。</p>
-    <p style="font-size: 13px; text-align: justify;">
-      ・色彩カード（右に表示されるもの）をタッチすると、カードが選択されます。その状態で<span>他のカードを押す</span>と位置の変更が可能です。画面中央に表示される「ゴミ箱」マークを押すと削除できます。</p>
-    <p style="font-size: 13px; text-align: justify;">
-      ・PCCSの「拡大縮小・移動」が可能です。（PCの場合はマウススクロール、Macbook等は2本指でパッドを上下に動かす）</p>
-    <p style="font-size: 13px; text-align: justify;">
-      ・右上のリセットマークを押すことで、大きさ・位置のリセットができます。</p>
-    <div class="line"></div>
-    <p style="font-size: 20px; text-align: center;">Q&A</p>
-    <p style="font-size: 13px; text-align: justify;">
-      Q.<br>A.</p>
-    <div class="line"></div>
-    <p style="font-size: 13px;">
-      問い合わせ・バグ報告等は<a href="mailto:yt.repomail@gmail.com" style="color: rgb(10, 23, 255)">こちら</a></p>
-    <div class="line"></div>
-    <p style="font-size: 20px; text-align: center;">修正記録</p>
-    <div class="revLine"></div>
-    <p style="font-size: 13px; text-align: justify;">
-      <span style="font-size:15px; font-weight: normal; color: rgb(6, 6, 6);">5/8</span>
-      <br>・無彩色の追加
-      <br>・横画面(PC等)と縦画面(スマホ等)のUI統一
-      <br>・横画面での拡大縮小・移動の実装</p>
+    <p style="position: relative; left: 50%; transform: translate(-50%); font-size: 12px; top: 0.5em; margin: -1em;">最終更新日：2025-5-11</p>
+    <h1 style="font-size: 25px; margin-top: 1em;">ヘルプセンター</h1>
+
+    <div class="whatIsPCCS line">
+
+      <h2>PCCSとは？</h2>
+
+      <ul>
+        <li><strong>一般財団法人日本色彩研究所</strong>が開発した表色系。</li>
+        <li>「<strong>P</strong>ractical <strong>C</strong>olor <strong>C</strong>oordinate <strong>S</strong>ystem（日本色研配色体系）」の略。</li>
+        <li>色を「彩度」「明度」を「トーン」という概念で表したもの。</li>
+        <li><a href="https://ja.wikipedia.org/wiki/PCCS" target="_blank">参考</a></li>
+      </ul>
+
+      <ul class="anno">
+        <li>
+          本サイトのPCCSは、「色彩検定３級」のテキストと「新配色カード199a」を参考に制作されたため、
+          「sトーン(strong)」はありません。また、「ltトーン(light)」「pトーン(pale)」は、
+          代表色よりも彩度が高い色であることを示す「＋」の記号が付いています。
+        </li>
+      </ul>
+
+      <style>
+        .anno > li {
+          text-align: justify;
+          text-indent: 1em;
+          position: relative;
+          font-size: 10px;
+          color: rgb(230, 89, 35);
+        }
+        .anno > li::before {
+          content: "*";
+          font-size: 12px;
+          position: absolute;
+          left: -0.5em;
+          top: 0.15em;
+        }
+        .whatIsPCCS > ul {
+           padding-left: 0em;
+           list-style: none;
+           font-size: 13px;
+           text-align: justify;
+        }
+      </style>
+
+    </div>
+
+    <div class="howToUse line">
+
+      <h2>使い方</h2>
+      
+      <ul>
+        <li>中心にある<strong>PCCS</strong>をクリックし、配色の確認ができます。</li>
+        <li>配色の順番を変更・削除することも可能です。</li>
+        <li>色は最大4つまで追加可能です。</li>
+        <li>色彩カード（右に表示されるもの）をタッチすると、カードが選択されます。その状態で<strong>他のカードを押す</strong>と位置の変更が可能です。画面中央に表示される「ゴミ箱」マークを押すと削除できます。</li>
+        <li>PCCSの「拡大縮小・移動」が可能です。（PCの場合はマウススクロール、Macbook等は2本指でパッドを上下に動かす）</li>
+        <li>右上のリセットマークを押すことで、大きさ・位置のリセットができます。</li>
+      </ul>
+
+      <style>
+        .howToUse > ul {
+           font-size: 13px;
+           text-align: justify;
+           padding-left: 1.5em;
+        }
+        .howToUse > ul > li {
+          margin-bottom: 0.8em;
+        }
+      </style>
+
+    </div>
+
+    <div class="QnA line">
+
+      <h2>Q&A</h2>
+
+      <dl>
+        <dt>Question</dt>
+        <dd>Answer</dd>
+      </dl>
+
+      <style>
+        .QnA > dl {
+          font-size: 13px;
+          text-align: justify;
+          width: 100%;
+        }
+        .QnA > dl > dt {
+          font-weight: bold;
+          margin-top: 10px;
+          word-break: break-word;
+        }
+        .QnA > dl > dt::before {
+          position: relative;
+          left: 0em;
+          content: '・';
+        }
+        .QnA > dl > dd {
+          text-align: justify;
+          margin-left: 2em;
+          color: rgb(48, 48, 48);
+          word-break: break-word;
+        }
+      </style>
+
+    </div>
+
+    <div class="inq line">
+
+      <h2>お問い合わせ</h2>
+
+      <ul>
+        <li><a href="mailto:yt.repomail@gmail.com?subject=PCCS・問い合わせ">お問い合わせ</a></li>
+        <li><a href="mailto:yt.repomail@gmail.com?subject=PCCS・バグ報告">バグ報告</a></li>
+      </ul>
+
+      <style>
+        .inq > ul {
+          list-style: none;
+          font-size: 13px;
+          text-align: center;
+          padding-left: 0em;
+        }
+        .inq > ul > li {
+          display: inline-block;
+          margin: -1em 0.5em;
+          color: rgb(10, 23, 255)
+        }
+      </style>
+
+    </div>
+    
+    <div class="revi line">
+      <h2>修正履歴</h2>
+
+      <ul>
+        <h4>2025-5-11</h4>
+        <li>ヘルプセンターの内容を一部変更</li>
+      </ul>
+
+      <ul>
+        <h4>2025-5-8</h4>
+        <li>無彩色の追加</li>
+        <li>横画面(PC等)と縦画面(スマホ等)のUI統一</li>
+        <li>横画面での拡大縮小・移動の実装</li>
+      </ul>
+
+      <style>
+        .revi > ul > li {
+          margin-right: 1em;
+          font-size: 13px;
+          text-align: justify;
+        }
+        .revi > ul > h4 {
+          position: relative;
+          font-weight: bold;
+          font-size: 16px;
+          text-align: justify;
+          left: -1.5em;
+          top: 0.3em;
+        }
+        .revi > ul > h4::after {
+          content: "";
+          position: absolute;
+          top: 1.2em;
+          left: 0;
+          width: 20%;
+          border-bottom: solid 1.3px #333;
+        }
+        .revi > ul { 
+          position: relative;
+          margin-top: 2em;
+          margin-left: 0em;
+        }
+        .revi > ul::before {
+          content: "";
+          position: absolute;
+          top: -1em;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 95%;
+          border-bottom: dashed 1.3px #333;
+        }
+      </style>
+
+    </div>
+    
   </div>
+
+  <style>
+    .line > h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .line { 
+      position: relative;
+      margin-top:2em;
+    }
+    .line::before {
+      content: "";
+      position: absolute;
+      top: -1em; /* ← 上端に線を配置 */
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #000; /* 線の色 */
+    }
+    strong {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      color: rgb(235, 105, 110); /* 必要に応じて変更 */
+    }
+  </style>
 
 </body>
 </html>
