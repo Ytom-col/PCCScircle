@@ -1,7 +1,11 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .ques {
   position: fixed;
@@ -37,19 +41,6 @@ a[target="_blank"]:hover {
   cursor: pointer;
   color: red;
 }
-.anno {
-  width: 900px;
-  position: relative;
-  padding-left: 1em;
-  text-indent: 0em;
-}
-.anno::before {
-  content: "*";
-  font-size: 12px;
-  position: absolute;
-  left: 0.2em;
-  top: 0;
-}
 
 @media (max-width: 3000px) {
   .container {
@@ -57,6 +48,8 @@ a[target="_blank"]:hover {
     top: 10px;
     left: 50%;
     width: 600px;
+    margin: 10px;
+    padding: 1em 0 3em 0;
     transform: translateX(-50%);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -66,29 +59,12 @@ a[target="_blank"]:hover {
   .container {
     position: absolute;
     top: 10px;
-    left: 50%;
     width: 80%;
-    margin: 10px;
-    transform: translateX(-53%);
+    
+    margin: auto;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
   }
-}
-
-
-.line {
-  align-items: center;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-}
-.revLine {
-  align-items: center;
-  left: 50%;
-  width: 100%;
-  height: 1px;
-  border-bottom: dashed 1.3px #333;
 }
 .container > p:nth-child(n+1):nth-child(-n+90) > span {
   color: rgb(214, 132, 132);
