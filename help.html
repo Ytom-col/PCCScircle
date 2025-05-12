@@ -96,31 +96,30 @@
 
       <h2>Q&A</h2>
 
-      <dl>
-        <dt>Question</dt>
-        <dd>Answer</dd>
-      </dl>
+      <details>
+        <summary>Question</summary>
+        <p>Answer</p>
+      </details>
 
       <style>
-        .QnA > dl {
+        .QnA > details {
           font-size: 13px;
           text-align: justify;
           width: 100%;
         }
-        .QnA > dl > dt {
-          font-weight: bold;
+        .QnA > details > summary {
           margin-top: 10px;
           word-break: break-word;
         }
-        .QnA > dl > dt::before {
+        .QnA > details > summary::before {
           position: relative;
           padding-right: 0.3em;
-          content: '・';
         }
-        .QnA > dl > dd {
+        .QnA > details > p {
           text-align: justify;
-          margin-left: 2em;
-          color: rgb(48, 48, 48);
+          margin-top: -0em;
+          margin-left: 1em;
+          color: rgb(72, 72, 72);
           word-break: break-word;
         }
       </style>
