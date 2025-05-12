@@ -137,15 +137,13 @@ a[target="_blank"]:hover {
 
 /* 修正履歴 */
 .revi > dl > dd {
-margin-top: 1.5em;
-margin-bottom: -1.5em;
-margin-right: 2em;
+margin: 1.5em 2em -1.5em 3em;
 font-size: 13px;
 text-align: justify;
 }
 .revi > dl > dd::before {
 content: "・";
-padding-right: 0.5em;
+margin-left: -1em;
 }
 .revi > dl > dt {
 position: relative;
@@ -166,8 +164,7 @@ border-bottom: solid 1.3px #333;
 .revi > dl { 
 word-break: break-word;
 position: relative;
-margin-top: 3.5em;
-margin-left: 0em;
+margin: 2em 0 3em;
 }
 .revi > dl::before {
 content: "";
