@@ -17,7 +17,9 @@
 
   <div class="container">
 
-    <p style="position: relative; left: 50%; transform: translate(-50%); font-size: 12px; top: 0.5em; margin: -1em;">最終更新日：2025-5-11</p>
+    <p style="position: relative; left: 50%; transform: translate(-50%); font-size: 12px; top: 0.5em; margin: -1em;">
+      最終更新日：2025-5-12
+    </p>
     <h1 style="font-size: 25px; margin-top: 1em;">ヘルプセンター</h1>
 
     <div class="whatIsPCCS line">
@@ -156,33 +158,40 @@
     <div class="revi line">
       <h2>修正履歴</h2>
 
-      <ul>
-        <h4>2025-5-11</h4>
-        <li>ヘルプセンターの内容を一部変更</li>
-      </ul>
-
-      <ul>
-        <h4>2025-5-8</h4>
-        <li>無彩色の追加</li>
-        <li>横画面(PC等)と縦画面(スマホ等)のUI統一</li>
-        <li>横画面での拡大縮小・移動の実装</li>
-      </ul>
+      <!-- 2025-5-11 -->
+      <dl>
+        <dt>2025-5-11</dt>
+        <dd>ヘルプセンターの内容を一部変更</dd>
+      </dl>
+      <!-- 2025-5-8 -->
+      <dl> 
+        <dt>2025-5-8</dt>
+        <dd>無彩色の追加</dd>
+        <dd>横画面(PC等)と縦画面(スマホ等)のUI統一</dd>
+        <dd>横画面での拡大縮小・移動の実装</dd>
+      </dl>
 
       <style>
-        .revi > ul > li {
-          margin-right: 1em;
+        .revi > dl > dd {
+          margin-top: 1.5em;
+          margin-bottom: -1.5em;
+          margin-right: 2em;
           font-size: 13px;
           text-align: justify;
         }
-        .revi > ul > h4 {
+        .revi > dl > dd::before {
+          content: "・";
+          padding-right: 0.5em;
+        }
+        .revi > dl > dt {
           position: relative;
           font-weight: bold;
           font-size: 16px;
           text-align: justify;
-          left: -1.5em;
+          left: 2em;
           top: 0.3em;
         }
-        .revi > ul > h4::after {
+        .revi > dl > dt::after {
           content: "";
           position: absolute;
           top: 1.2em;
@@ -190,12 +199,13 @@
           width: 20%;
           border-bottom: solid 1.3px #333;
         }
-        .revi > ul { 
+        .revi > dl { 
+          word-break: break-word;
           position: relative;
-          margin-top: 2em;
+          margin-top: 3.5em;
           margin-left: 0em;
         }
-        .revi > ul::before {
+        .revi > dl::before {
           content: "";
           position: absolute;
           top: -1em;
