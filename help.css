@@ -28,6 +28,7 @@ body {
   color: rgb(65, 65, 65);
   transform: translate(-3px,-2px);
 }
+
 a[target="_blank"]::after{
   content:'';
   display:inline-block;
@@ -66,33 +67,114 @@ a[target="_blank"]:hover {
     font-family: Arial, Helvetica, sans-serif;
   }
 }
-.container > p:nth-child(n+1):nth-child(-n+90) > span {
-  color: rgb(214, 132, 132);
-  font-weight: bold;
+
+/* PCCSとは？　*/
+.anno > li {
+  text-align: justify;
+  text-indent: 1em;
+  position: relative;
+  font-size: 10px;
+  color: rgb(230, 89, 35);
 }
-.container > p:nth-child(4) > span {
-  color: rgb(206, 88, 86);
+.anno > li::before {
+  content: "*";
+  font-size: 12px;
+  position: absolute;
+  left: -0.5em;
+  top: 0.15em;
 }
-.container > p:nth-child(n+10):nth-child(-n+11) {
+.whatIsPCCS > ul {
+    padding-left: 0em;
+    list-style: none;
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* 使い方　*/
+.howToUse > ul {
+    font-size: 13px;
+    text-align: justify;
+    padding-left: 1.5em;
+}
+.howToUse > ul > li {
+  margin-bottom: 0.8em;
+}
+
+/* Q&A */
+.QnA > details {
   font-size: 13px;
   text-align: justify;
-}
-.container > p:nth-child(13) {
-  font-size: 20px;
-}
-
-.subline {
-  align-items: center;
-  width: 80%;
-  transform: translateX(13%);
-  border-bottom: dotted 2px #333;
-}
-
-.footer {
-  position: fixed;
-  height: 100px;
   width: 100%;
-  bottom: 0;
-  background-color: white;
-  border-top: solid 2px;
+}
+.QnA > details > summary {
+  margin-top: 10px;
+  word-break: break-word;
+}
+.QnA > details > summary::before {
+  position: relative;
+  padding-right: 0.3em;
+}
+.QnA > details > p {
+  text-align: justify;
+  margin-top: -0em;
+  margin-left: 1em;
+  color: rgb(72, 72, 72);
+  word-break: break-word;
+}
+
+/* お問い合わせ */
+.inq > nav > ul {
+  list-style: none;
+  font-size: 13px;
+  text-align: center;
+  padding-left: 0em;
+}
+.inq > nav > ul > li {
+  display: inline-block;
+  margin: -1em 0.5em;
+  color: rgb(10, 23, 255)
+}
+
+/* 修正履歴 */
+.revi > dl > dd {
+margin-top: 1.5em;
+margin-bottom: -1.5em;
+margin-right: 2em;
+font-size: 13px;
+text-align: justify;
+}
+.revi > dl > dd::before {
+content: "・";
+padding-right: 0.5em;
+}
+.revi > dl > dt {
+position: relative;
+font-weight: bold;
+font-size: 16px;
+text-align: justify;
+left: 2em;
+top: 0.3em;
+}
+.revi > dl > dt::after {
+content: "";
+position: absolute;
+top: 1.2em;
+left: 0;
+width: 6em;
+border-bottom: solid 1.3px #333;
+}
+.revi > dl { 
+word-break: break-word;
+position: relative;
+margin-top: 3.5em;
+margin-left: 0em;
+}
+.revi > dl::before {
+content: "";
+position: absolute;
+top: -1em;
+left: 50%;
+transform: translateX(-50%);
+width: 95%;
+border-bottom: dashed 1.3px #333;
 }
